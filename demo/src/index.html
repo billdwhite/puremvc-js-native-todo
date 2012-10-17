@@ -6,7 +6,7 @@
         <title>PureMVC • TodoMVC • Native Version</title>
         <link rel="stylesheet" href="assets/base.css">
         <!--[if IE]>
-        <script type="text/javascript" src="assets/ie.js"></script>
+        <script type="text/javascript" src="js/libs/ie.js"></script>
         <![endif]-->
     </head>
     <body>
@@ -46,18 +46,18 @@
         </footer>
 
         <script type="text/javascript"
-                src="../../dojo/dojo.js"
+                src="js/libs/dojo.js"
                 data-dojo-config="async:true,
                                   parseOnLoad:true,
                                   packages: [{
-                                      name: 'puremvc',
-                                      location: '../../../puremvc/bin'
+                                      name: 'libs',
+                                      location: './'
                                   },{
                                       name: 'assets',
-                                      location: '../../../demo/src/assets'
+                                      location: '../../assets'
                                   },{
                                       name: 'todomvcnative',
-                                      location: '../../../demo/src/js/src'
+                                      location: '../src'
                                   }]">
         </script>
 
@@ -68,8 +68,8 @@
                     "dojo/dom",
                     "dojo/on",
                     "dojo/_base/window",
-                    "assets/director-1.1.6.min",
-                    "puremvc/puremvc-1.0.1.min",
+                    "libs/director-1.1.6.min",
+                    "libs/puremvc-1.0.1.min",
                     "todomvcnative/app"
                 ],
                 function(ready, dom, on, win, director, puremvc, Application) {
